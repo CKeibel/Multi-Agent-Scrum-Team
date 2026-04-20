@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     )
     input_tokens_cost: float
     output_tokens_cost: float
+    model: str
+    api_key: str
 
 
 settings = Settings()
