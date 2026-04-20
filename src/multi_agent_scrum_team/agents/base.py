@@ -46,7 +46,7 @@ class AgentRuntime:
     run_id: str
     agent_id: str
     task: str
-    state: AgentState
+    state: AgentState = AgentState.IDLE
     step_count: int = 0
     max_steps: int = 20
     tokens_used: int = 0
