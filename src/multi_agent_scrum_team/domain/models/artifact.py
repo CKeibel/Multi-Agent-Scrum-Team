@@ -32,3 +32,4 @@ class Artifact:
     status: ArtifactStatus = ArtifactStatus.DRAFT
     created_at: str = field(default_factory=lambda: datetime.now())
     updated_at: str = field(default_factory=lambda: datetime.now())
+    version: int = 1
