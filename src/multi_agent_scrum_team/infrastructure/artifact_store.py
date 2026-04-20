@@ -3,6 +3,7 @@ import asyncio
 from multi_agent_scrum_team.domain.models import Artifact, ArtifactType
 
 
+# TODO: Implement as PostgresSQL Store
 class ArtifactStore:
     """In-Memory Artifact Store."""
 
