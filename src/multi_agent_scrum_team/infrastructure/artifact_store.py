@@ -19,7 +19,7 @@ class ArtifactStore:
     async def get(self, artifact_id: str) -> Artifact | None:
         return self._store.get(artifact_id)
 
-    async def find_by_type(self, artifact_type: ArtifactType) -> list[ArtifactType]:
+    async def find_by_type(self, artifact_type: ArtifactType) -> list[Artifact]:
         results = [
             artifact
             for artifact in self._store.values()

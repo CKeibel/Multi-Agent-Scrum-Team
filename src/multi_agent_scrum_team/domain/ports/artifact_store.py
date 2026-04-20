@@ -13,5 +13,5 @@ class ArtifactStorePort(Protocol):
     async def get(self, artifact_id: str) -> Artifact | None:
         ...
 
-    async def find_by_type(self, artifact_type: ArtifactType) -> list[ArtifactType]:
+    async def find_by_type(self, artifact_type: ArtifactType) -> list[Artifact]:
         ...
